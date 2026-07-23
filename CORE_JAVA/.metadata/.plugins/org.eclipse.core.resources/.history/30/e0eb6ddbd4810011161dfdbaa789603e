@@ -1,0 +1,10 @@
+package JavaEasyBook;
+
+public class PracticePg49F {
+	/*a program to read n and print till n from 1*/
+	public static void main(String[] args) {
+		
+
+	}
+
+}

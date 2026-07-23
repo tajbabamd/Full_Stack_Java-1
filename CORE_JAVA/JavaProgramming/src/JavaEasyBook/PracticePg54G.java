@@ -1,0 +1,22 @@
+package JavaEasyBook;
+
+public class PracticePg54G {
+	/*print a pattern 
+	 * 12345
+	 * 12345
+	 * 12345
+	 * 12345*/
+	public static void main(String[] args) {
+		int i, j;
+		// outer for loop controls number of rows(i)
+		for(i = 1; i <= 4; i++) {
+			// inner for loop controls number of columns (j)
+			for(j = 1; j <= 5; j++) {
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

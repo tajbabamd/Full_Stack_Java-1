@@ -1,0 +1,30 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg41A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		double length, width, base, height, radius, area;
+		
+		System.out.println("Calculation of Area Menu.");
+		System.out.println("_".repeat(40));
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		
+		sc.close();
+
+	}
+
+}

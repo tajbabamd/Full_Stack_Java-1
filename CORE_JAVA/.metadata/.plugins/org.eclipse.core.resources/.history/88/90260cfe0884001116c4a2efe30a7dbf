@@ -1,0 +1,50 @@
+class Complex{
+	private double real;
+	private double imag;
+	public double getReal() {
+		return real;
+	}
+	public void setReal(double real) {
+		this.real = real;
+	}
+	public double getImag() {
+		return imag;
+	}
+	public void setImag(double imag) {
+		this.imag = imag;
+	}
+	@Override
+	public String toString() {
+		return "Complex [real=" + real + ", imag=" + imag + "]";
+	}
+	
+	public Complex addComplex(Complex ob) {
+		Complex resob = new Complex();
+		resob.real = this.real + ob.real;
+		resob.imag = this.imag + ob.imag;
+		
+		return resob;
+	}
+}
+public class Class6 {
+
+	public static void main(String[] args) {
+		Complex c1 = new Complex();
+		Complex c2 = new Complex();
+		Complex c3 = new Complex();
+		
+		c1.setReal(4.3);
+		c1.setImag(3.4);
+		
+		c2.setReal(2.3);
+		c2.setImag(5.5);
+		
+		c3 = c1.addComplex(c2);
+		
+		System.out.println("c1 = " + c1);
+		System.out.println("c2 = " + c2);
+		System.out.println("c3 = " + c3);
+
+	}
+
+}

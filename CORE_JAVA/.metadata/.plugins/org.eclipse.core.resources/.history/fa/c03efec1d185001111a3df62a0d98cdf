@@ -1,0 +1,21 @@
+package JavaEasyBook;
+
+public class PracticePg58G {
+	/*a program to print pattern
+	 	
+		* System.out.print("* ");*/
+
+	public static void main(String[] args) {
+		
+		int i, j;
+		for(i = 1; i <=5; i++) {
+//			System.out.print("* ");s
+			for(j = i; j >= 15; j++) {
+				System.out.print(i + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

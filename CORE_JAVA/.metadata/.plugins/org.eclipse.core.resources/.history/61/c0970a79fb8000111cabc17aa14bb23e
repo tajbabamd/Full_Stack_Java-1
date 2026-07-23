@@ -1,0 +1,36 @@
+class Employee{
+	private String name, jobTittle;
+	private double salary;
+	
+//	setter methods
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setJobTittle(String jobTittle) {
+		this.jobTittle = jobTittle;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+		
+		if(jobTittle == "Manager") {
+			salary = 10000.00;
+		}else if(jobTittle == "Sales Man") {
+			salary = 5000.00; 
+		}else if(jobTittle == "Accountant") {
+			salary = 3000.00;
+		}else {
+			salary = 2000.00;
+		}
+	}
+//	getter methods
+//	calculation methods
+//	
+}
+public class Practice4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

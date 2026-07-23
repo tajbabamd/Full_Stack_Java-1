@@ -1,0 +1,25 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg54C {
+	/*read n numbers and print number of even numbers*/
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int m, n, o, i;
+		System.out.println("Enter a number:");
+		n = sc.nextInt();
+		
+		for(i = 1, o = 0; i <= n; i++) {
+			System.out.println("Enter the numbers:");
+			m = sc.nextInt();
+			if(m%2 == 0) {
+				o++;
+			}
+		}
+		System.out.println("Number of prime numbers are: "+ o);
+		sc.close();
+	}
+
+}

@@ -1,0 +1,27 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg43A {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		char ch;
+		
+		System.out.println("Enter character: ");
+		ch = sc.next().charAt(0);
+		
+		if(ch == x) {
+			System.out.println("character "+ch+ "is an Vowel.");
+		}else{
+			System.out.println("character "+ch+ "is Consonent.");
+		}
+		
+		
+		
+		sc.close();
+
+	}
+
+}

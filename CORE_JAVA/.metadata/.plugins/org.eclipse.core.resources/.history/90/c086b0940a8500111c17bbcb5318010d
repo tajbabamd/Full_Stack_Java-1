@@ -1,0 +1,15 @@
+
+package TestCoding;
+
+public class TestPassMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TestPass2 st = new TestPass2("TestPass2");
+		st.setSize(800, 800);
+		st.setVisible(true);
+
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg51D {
+	/* read n and print sum of its factors*/
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n, i, sum = 0;
+		System.out.println("Enter a number:");
+		n = sc.nextInt();
+		
+		for(i = 1; i <= n; i++) {
+			if(n%i == 0) {
+				System.out.println(i);
+				sum+=i;
+			}
+		}
+		System.out.println("Sum of factors = " + sum);
+		sc.close();
+	}
+
+}

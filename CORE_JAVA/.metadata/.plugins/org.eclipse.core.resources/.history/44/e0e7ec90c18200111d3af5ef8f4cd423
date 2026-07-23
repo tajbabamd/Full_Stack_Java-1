@@ -1,0 +1,69 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg54F {
+	/*print perfect numbers between n and m
+	 * a positive integer which equals to its sum of its factors is a perfect number*/
+	
+	public static void line() {
+		System.out.println();
+	}
+	public static void enIf() {
+		System.out.print(" En if ");
+	}
+	public static void exIf() {
+		System.out.print(" Ex if ");
+	}
+	public static void enForI(int i) {
+		System.out.print(" En for i "+i);
+	}
+	public static void exForI(int i) {
+		System.out.print(" Ex for i "+i);
+	}
+	public static void enForJ(int j) {
+		System.out.print(" En for j "+j);
+	}
+	public static void exForJ(int j) {
+		System.out.print(" Ex for j "+j);
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n, m, i, j, sum = 0;
+		
+		System.out.println("Enter a number n: ");
+		n = sc.nextInt();
+		System.out.println("Enter a number m: ");
+		m = sc.nextInt();
+		
+		for(i = n; i <= m; i++) {
+		line();	enForI(i);
+			for(j = 1; j <= n; j++) {
+				enForJ(j);
+				if(n%j == 0) {
+					enIf();line();
+					System.out.println(j+"-");
+					sum += j;
+
+					System.out.println(" sum: " + sum);
+			
+				}exIf();
+			}exForJ(j);
+			
+			
+			
+			if(sum == i) {
+				System.out.println(" " + i + " is a perfect number");
+			}else {
+				System.out.println(" " + i + " is not a perfect number");
+			}
+
+		}exForI(i);
+		
+		
+		sc.close();
+	}
+
+}

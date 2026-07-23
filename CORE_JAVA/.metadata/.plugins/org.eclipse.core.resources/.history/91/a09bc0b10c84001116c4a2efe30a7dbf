@@ -1,0 +1,30 @@
+class A{
+	static int x;
+	int y;
+	public void setXY(int a, int b) {
+		x = a;
+		y = b;
+	}
+	
+	public void printXY() {
+		System.out.println("Static x = " + x + " Non-Static = " + y);
+	}
+}
+
+public class Static1 {
+
+	public static void main(String[] args) {
+		
+		A ob1 = new A();
+		A ob2 = new A();
+		
+		ob1.setXY(10, 20);
+		
+		System.out.println("ob1 = " + ob1 + " bo2 = " + ob2);
+		
+		ob1.printXY();
+		ob2.printXY();
+
+	}
+
+}

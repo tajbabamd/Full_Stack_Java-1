@@ -1,0 +1,66 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg43B {
+	/*Student details of academic */
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String name, result, grade;
+		int rollNo, sub1, sub2, sub3, total;
+		double avg;
+		
+		System.out.println("Enter Name: ");
+		name = sc.nextLine();
+		System.out.println("Enter RollNo: ");
+		rollNo = sc.nextInt();
+		System.out.println("Enter marks in Sub1: ");
+		sub1 = sc.nextInt();
+		System.out.println("Enter marks in Sub2: ");
+		sub2 = sc.nextInt();
+		System.out.println("Enter marks in Sub3: ");
+		sub3 = sc.nextInt();
+		
+		total = sub1 + sub2 + sub3;
+		avg = (double)total/3.0;
+		if(avg >= 80) {
+			result = "pass";
+			grade = "A";
+		}else if(avg >= 70 && avg < 80) {
+			result = "pass";
+			grade = "B";
+		}else if(avg >= 60 && avg < 70) {
+			result = "pass";
+			grade = "C";
+		}else if(avg >= 50 && avg < 60) {
+			result = "pass";
+			grade = "D";
+		}else if(avg >= 35 && avg < 50) {
+			result = "pass";
+			grade = "F";
+		}else if(avg < 35) {
+			result = "fail";
+			grade = "F";
+		}else {
+			result = "fail";
+		}
+		
+		System.out.println("Student details");
+		System.out.println("-".repeat(40));
+		System.out.println("Name: " + name);
+		System.out.println("RollNo: " + rollNo);
+		System.out.println("Marks sub1: " + sub1);
+		System.out.println("Marks sub2: " + sub2);
+		System.out.println("Marks sub3: " + sub3);
+		System.out.println("Total Marks: " + total);
+		System.out.println("Result: " + result);
+		System.out.println("Grade: " + grade);
+		
+
+		sc.close();
+
+	}
+
+}

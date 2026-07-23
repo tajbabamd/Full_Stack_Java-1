@@ -1,0 +1,94 @@
+class Employee{
+	private String name, jobTittle;
+	private double salary;
+	
+//	setter methods
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setJobTittle(String jobTittle) {
+		this.jobTittle = jobTittle;
+	}
+	
+//	getter methods
+	public String getName() {
+		return name;
+	}
+	public String getJobTittle() {
+		return jobTittle;
+	}
+	public double getSalary() {
+		return salary;
+	}
+
+//	calculation methods
+	public void calculateSalary() {
+
+		if(jobTittle == "Manager") {
+			salary = 10000.00;
+		}else if(jobTittle == "Sales Man") {
+			salary = 5000.00; 
+		}else if(jobTittle == "Accountant") {
+			salary = 3000.00;
+		}else {
+			salary = 2000.00;
+		}
+	}
+	
+	//print method
+	public void printDetails() {
+		System.out.println("Employee Details");
+		System.out.println("Name: " + getName() );
+		System.out.println("Job Tittle: "+ getJobTittle()); 
+		System.out.println("Salary: " + getSalary()); 
+		System.out.println("-".repeat(40));
+	}
+}
+
+
+public class Practice4 {
+
+	public static void main(String[] args) {
+		
+		Employee e1 = new Employee();
+		Employee e2 = new Employee();
+		Employee e3 = new Employee();
+		Employee e4 = new Employee();
+		
+		e1.setName("John");
+		e1.setJobTittle("Manager");
+		
+		e2.setName("Steve");
+		e2.setJobTittle("Sales Man");
+		
+		e3.setName("Robert");
+		e3.setJobTittle("Accountant");
+
+		e4.setName("Fury");
+		e4.setJobTittle("Attendent");
+		
+		e1.calculateSalary();
+		e2.calculateSalary();
+		e3.calculateSalary();
+		e4.calculateSalary();
+		
+		e1.printDetails();
+		e2.printDetails();
+		e3.printDetails();
+		e4.printDetails();
+		
+		e3.setJobTittle("Sales Man");
+		
+		e2.setJobTittle("Accountant");
+		
+		e2.calculateSalary();
+		e3.calculateSalary();
+		
+		e1.printDetails();
+		e2.printDetails();
+		e3.printDetails();
+		e4.printDetails();
+		
+	}
+
+}

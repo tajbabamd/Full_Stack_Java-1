@@ -1,0 +1,42 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg54E {
+	/*read n numbers and print they are prime or not 
+	 * a number which cannot be divisible by any number other than by itself and 1 is prime number*/
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n, m, i, j, k, c;
+		
+		System.out.println("Enter N number: ");
+		n = sc.nextInt();
+		
+		for(i = 1; i <= n; i++) {
+		
+			System.out.println("Enter number "+(n-i+1)+" times More:");
+			m = sc.nextInt();
+			k = 0;
+		
+			for(j = 2; j < m; j++) {
+//				System.out.println("m = " + m + " j = " + j + " c = " + (c=m%j)); // for debugging
+				if(m%j == 0) {
+					k++;
+//					System.out.println("Entered if condition m%j, k = " + k); // for debugging 
+				}
+				
+			}
+			
+			if(k == 0 && m > 1) {	
+				System.out.println(m + " is a prime number");
+			}else {
+				System.out.println(m + " is not a prime number");
+			}
+		}
+		
+		System.out.println("<***> [code is ended] <***>");
+		sc.close();
+	}
+
+}

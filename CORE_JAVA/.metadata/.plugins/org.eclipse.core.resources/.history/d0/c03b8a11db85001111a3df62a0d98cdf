@@ -1,0 +1,27 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg60C {
+	/*read a number and print odd digits usning while loop*/
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n, ld, m = 0, rev = 0, odd=0;
+		
+		System.out.println("Enter a number:");
+		n = sc.nextInt();
+		
+		while(n > 0) {
+			ld = n % 10;
+			if (ld%2 == 1){
+				m = ld;
+			}
+			
+		}
+		sc.close();
+		
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg54E {
+	/*read n numbers and print they are prime or not */
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n, m, i, j, k;
+		
+		System.out.println("Enter N number: ");
+		n = sc.nextInt();
+		
+		for(i = 1; i <= n; i++) {
+		
+			System.out.println("Enter number "+(i)+" times More:");
+			m = sc.nextInt();
+			k = 0;
+		
+			for(j = 2; j < m; j++) {
+				if(m%j != 0) {
+					k++;
+				}
+				
+			}
+			
+			if(k == 0 && m > 1) {	
+				System.out.println(m + " is a prime number");
+			}else {
+				System.out.println(m + " is not a prime number");
+			}
+		}
+		
+		System.out.println("<***> [code is ended] <***>");
+		sc.close();
+	}
+
+}

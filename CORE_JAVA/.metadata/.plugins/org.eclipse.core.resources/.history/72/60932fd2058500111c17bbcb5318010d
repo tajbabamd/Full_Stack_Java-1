@@ -1,0 +1,104 @@
+package TestCoding;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class TestPass2  extends JFrame implements ActionListener{
+	JLabel l1, l2;
+	JButton b1, b2;
+	JTextField t1, t2, t3, t4;
+	JTable ta;
+	JScrollPane sp;
+
+	public TestPass2 (String title) {
+		super(title);
+		setLayout(null);
+		
+		l1 = new JLabel("Convertion of pass");
+		l1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		l1.setForeground(Color.RED);
+		l1.setBounds(20, 15, 400, 30);
+		
+		l2 = new JLabel("Enter Pass");
+		l2.setBounds(100, 70, 100, 30);
+		
+//		l3 = new JLabel("Author");
+//		l3.setBounds(330, 70, 100, 30);
+//		
+//		l4 = new JLabel("Publisher");
+//		l4.setBounds(100, 100, 100, 30);
+//		
+//		l5 = new JLabel("Price");
+//		l5.setBounds(330, 100, 100, 30);
+		
+		t1 = new JTextField(15);
+		t1.setBounds(160, 71, 150, 30);
+		
+		t2 = new JTextField(15);
+		t2.setBounds(380, 71, 150, 30);
+		
+		t3 = new JTextField(15);
+		t3.setBounds(160, 100, 150, 30);
+		
+		t4 = new JTextField(15);
+		t4.setBounds(380, 100, 150, 30);
+		
+		b1 = new JButton("Add Books");
+		b1.setBounds(210, 150, 100, 30);
+		
+		b2 = new JButton ("Back");
+		b2.setBounds(210, 190, 100, 30);
+				
+		ta = new JTable(Book.bookModel);
+		sp = new JScrollPane(ta);
+		sp.setBounds(20, 250, 700, 200);
+		
+		add(l1);
+		add(l2);
+		add(t1);
+		add(l3);
+		add(t2);
+		add(l4);
+		add(t3);
+		add(l5);
+		add(t4);
+		add(b1);
+		add(b2);
+		
+		add(sp);
+
+		
+		b1.addActionListener(this);	
+		b2.addActionListener(this);
+		
+		setSize(800, 800);
+//		setVisible(true);
+				
+	}
+@Override
+public void actionPerformed(ActionEvent e) {
+	// TODO Auto-generated method stub
+	if(e.getSource()==b1) {
+	String title = t1.getText();
+	String author = t2.getText();
+	String publisher = t3.getText();
+	String price = t4.getText();
+	if(!title.isEmpty() && !author.isEmpty() && !publisher.isEmpty() && !price.isEmpty()) {
+		Book.bookModel.addRow(new Object[] {title, author, publisher, price});
+		t1.setText("");
+		t2.setText("");
+		t3.setText("");
+		t4.setText("");
+	}
+	}else if(e.getSource()==b2) {
+		new Book("Book Menu").setVisible(true);
+		this.dispose();
+	}//else {
+//		JOptionPane.showMessageDialog(null, "please fill all the fields");
+//	}
+}
+
+}
+
+

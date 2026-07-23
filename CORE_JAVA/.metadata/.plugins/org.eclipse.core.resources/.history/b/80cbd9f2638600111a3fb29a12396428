@@ -1,0 +1,73 @@
+class Student{
+	private int rollNo;
+	private String studentName;
+	private String branch;
+	public int getRollNo() {
+		return rollNo;
+	}
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public String getBranch() {
+		return branch;
+	}
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+	@Override
+	public String toString() {
+		return "Student [rollNo=" + rollNo + ", studentName=" + studentName + ", branch=" + branch + "]";
+	}
+	
+}
+
+class Fee extends Student{
+	private String feeType;
+	private double amount;
+	public String getFeeType() {
+		return feeType;
+	}
+	public void setFeeType(String feeType) {
+		this.feeType = feeType;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	@Override
+	public String toString() {
+		return "Fee [feeType=" + feeType + ", amount=" + amount + "]";
+	}
+	
+	
+}
+public class SingleInheritence1 {
+
+	public static void main(String[] args) {
+		
+		Fee fob = new Fee();
+		
+		fob.setRollNo(1);
+		fob.setStudentName("Raj");
+		fob.setBranch("ECE");
+		fob.setFeeType("College Fee");
+		fob.setAmount(50000.00);
+		System.out.print("Roll no: " + fob.getRollNo());
+		System.out.println("Student name: " + fob.getStudentName());
+		System.out.print("Branch: " + fob.getBranch());
+		System.out.println("Fee type: " + fob.getFeeType());
+		System.out.print("Amount to be paid: " + fob.getAmount());
+		
+		
+
+	}
+
+}

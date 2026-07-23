@@ -1,0 +1,13 @@
+package JavaEasyBook;
+
+public class PracticePg58E {
+	/*a program to print pattern
+	 
+	 * System.out.print("* ");*/
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

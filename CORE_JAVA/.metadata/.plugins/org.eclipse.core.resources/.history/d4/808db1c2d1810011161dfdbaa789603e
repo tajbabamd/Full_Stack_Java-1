@@ -1,0 +1,14 @@
+package JavaEasyBook;
+
+public class PracticePg49A {
+	/* a program to print 10 to 1 number in reverse*/
+	public static void main(String[] args) {
+		
+		for(int i = 10; i < 0; i--) {
+			System.out.println(i);
+		}
+
+
+	}
+
+}

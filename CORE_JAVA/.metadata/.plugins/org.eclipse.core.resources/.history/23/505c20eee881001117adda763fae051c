@@ -1,0 +1,27 @@
+package System.out;
+
+import java.util.Scanner;
+
+public class PracticePg53A {
+	
+	/*read n numbers and print their sum and average*/
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n, i, x, sum = 0, z;
+		double average;
+		System.out.println("Enter a number:");
+		n = sc.nextInt();
+		z = n+1;
+		for(i = 1; i <= n; i++) {
+			System.out.println("Enter a number "+(--z)+" times: ");
+			x = sc.nextInt();
+			sum+=i;
+		}
+		System.out.println("sum: " + sum);
+		System.out.println("average: " + sum/(double)n);
+		
+		sc.close();
+	}
+
+}

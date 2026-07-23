@@ -1,0 +1,39 @@
+class Results extends Marks{
+	
+	private int total;
+	private double average;
+	
+	public void calculateTotal() {
+		total = subject1 +subject2;
+	}
+	
+	public void calculateAverage() {
+		average = total/2.0;
+	}
+
+	@Override
+	public String toString() {
+		return "Results [total=" + total + ", average=" + average +
+				", \ntoString()=" + super.toString() + "]";
+	}
+	
+	
+	
+}
+public class MultipleLevelInheritence1 {
+
+	public static void main(String[] args) {
+		
+		Results rob = new Results();
+		
+		rob.setSubject1(77);
+		rob.setSubject2(69);
+		
+		rob.calculateTotal();
+		rob.calculateAverage();
+		
+		System.out.println(rob);
+
+	}
+
+}

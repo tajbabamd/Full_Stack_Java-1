@@ -1,0 +1,37 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg46A {
+	/*Write a calculator program using switch statement*/
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int a, b, c, choice;
+		double div;
+		
+		System.out.println("Calculator menu");
+		System.out.println("-".repeat(24));
+		System.out.println("1. Addition,");
+		System.out.println("2. Substraction,");
+		System.out.println("3. Multiplication,");
+		System.out.println("4. Divition.");
+		System.out.println("-".repeat(24));
+
+		System.out.println("Enter the Choice: ");
+		choice = sc.nextInt();
+		
+		
+		switch(choice) {
+		case 1:
+			System.out.println("Enter the numbers to calculate: " + sc.nextInt(a) +""+ sc.nextInt(b));
+//			
+			c = a + b;
+			System.out.println("Addition of a and b is : ");
+		}
+		System.out.println();
+
+	}
+
+}

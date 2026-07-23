@@ -1,0 +1,38 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg37A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String empName;
+		int empId;
+		double salary, hra, da, pf, it, netsal;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter employee Name: ");
+		empName = sc.nextLine();
+		System.out.println("Enter employee ID: ");
+		empId = sc.nextInt();
+		System.out.println("Enter employee Salary: ");
+		salary = sc.nextDouble();
+		
+		if(salary >= 10000.00) {
+			hra = 0.40 * salary;
+			da = 0.30 * salary;
+			pf = 0.20 * salary;
+			it = 0.10 * salary;
+		}else {
+			hra = 0.20 * salary;
+			da = 0.10 * salary;
+			pf = 0.5 * salary;
+			it = 0.0 * salary;
+		}
+		
+		
+		sc.close();
+
+	}
+
+}

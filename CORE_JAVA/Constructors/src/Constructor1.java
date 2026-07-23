@@ -1,0 +1,36 @@
+class Employee{
+	private String eName;
+	private int empNo;
+	
+	public Employee() { // Default or zero or No argument constructor.
+		System.out.println("class loaded1");
+		this.eName = "King";
+		this.empNo = 101;
+	}
+	
+	public Employee(String eName, int empNo) { // Parameterized constructors
+		System.out.println("class loaded2");
+		this.eName = eName;
+		this.empNo = empNo;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [eName=" + eName + ", empNo=" + empNo + "]";
+	}
+	
+	
+}
+public class Constructor1 {
+
+	public static void main(String[] args) {
+		
+		Employee e1 = new Employee();
+		Employee e2 = new Employee("raju", 102);
+		
+		System.out.println("e1: " + e1);
+		System.out.println("e2: " + e2);
+
+	}
+
+}

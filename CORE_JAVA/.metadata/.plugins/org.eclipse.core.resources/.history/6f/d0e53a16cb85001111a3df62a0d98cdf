@@ -1,0 +1,15 @@
+
+package TestCoding;
+
+public class TestPassMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PasswordConverter1 st = new PasswordConverter1("Password Maker");
+		st.setSize(800, 800);
+		st.setVisible(true);
+
+
+	}
+
+}

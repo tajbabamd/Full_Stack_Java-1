@@ -1,0 +1,14 @@
+package JavaEasyBook;
+
+public class PracticePg55A {
+	/*a program to print pattern
+	 * 11111
+	 * 22222
+	 * 33333
+	 * 44444*/
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,21 @@
+
+class D{
+	private static int x = 10;
+	private int y = 20;
+	
+	public static void print() {
+		System.out.println("x = " + x);
+	}
+}
+
+public class Static3 {
+
+	public static void main(String[] args) {
+		D ob = new D();
+		
+		ob.print();
+		D.print();
+
+	}
+
+}

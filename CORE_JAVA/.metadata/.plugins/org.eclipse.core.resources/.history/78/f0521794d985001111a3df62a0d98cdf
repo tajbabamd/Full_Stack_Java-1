@@ -1,0 +1,12 @@
+package JavaEasyBook;
+
+public class PracticePg60C {
+	/*read a number and print odd digits usning while loop*/
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

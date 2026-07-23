@@ -1,0 +1,23 @@
+package JavaEasyBook;
+
+public class PracticePg57D {
+	/*a program to print pattern
+	 * E E E E E 
+	 * D D D D D 
+   	 * C C C C C 
+	 * B B B B B 
+	 * A A A A A  */
+
+	public static void main(String[] args) {
+		
+		for(char i = 69; i >= 65; i--) {
+			System.out.print("* ");
+			for(int j = 1; j <= 5; j++) {
+				System.out.print(i + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

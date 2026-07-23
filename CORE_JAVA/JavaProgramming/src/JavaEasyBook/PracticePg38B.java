@@ -1,0 +1,29 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg38B {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int a, b;
+		System.out.println("Enter number a: ");
+		a = sc.nextInt();
+		System.out.println("Enter number b: ");
+		b = sc.nextInt();
+		
+		if(a < b) {
+			System.out.println();
+			System.out.println(a + "  " + b);
+		}else {
+			System.out.println();
+			System.out.println(b + "  " + a);
+		}
+		
+		
+		sc.close();
+	}
+
+}

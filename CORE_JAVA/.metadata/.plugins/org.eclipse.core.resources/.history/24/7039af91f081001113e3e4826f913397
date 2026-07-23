@@ -1,0 +1,27 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg54B {
+	/*read n number and print sum of odd numbers*/
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n, i, x, sum = 0;
+		
+		System.out.println("Enter a number:");
+		n = sc.nextInt();
+		
+		for(i = 1; i <= n; i++) {
+			System.out.println("Enter a numbers:");
+			x = sc.nextInt();
+			
+			if(x%2 == 1) {
+				sum+=x;
+			}
+		}
+		System.out.println("sum : " + sum);
+		
+	}
+
+}

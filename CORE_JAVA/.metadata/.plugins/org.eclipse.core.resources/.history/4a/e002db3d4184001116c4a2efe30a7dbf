@@ -1,0 +1,35 @@
+		
+		/*Static variables*/
+
+class A{
+	static int x; /* if it is set for static then x will be common for all the objects 
+					* to be created once set */
+	int y;
+	public void setXY(int a, int b) {
+		x = a;
+		y = b;
+	}
+	
+	public void printXY() {
+		System.out.println("Static x = " + x + " Non-Static = " + y);
+	}
+}
+
+public class Static1 {
+
+	public static void main(String[] args) {
+		
+		A ob1 = new A(); /*class will load for the first time it is mentioned in the program */
+		A ob2 = new A(); /* it does not load for the second time onwards 
+						  * it may or may not load until the end of program */
+		
+		ob1.setXY(10, 20);
+		
+		System.out.println("ob1 = " + ob1.x + " bo1 = " + ob1.y);
+		
+		ob1.printXY();
+		ob2.printXY();
+
+	}
+
+}

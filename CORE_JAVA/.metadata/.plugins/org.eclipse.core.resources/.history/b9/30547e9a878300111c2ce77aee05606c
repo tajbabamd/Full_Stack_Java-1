@@ -1,0 +1,16 @@
+package JavaEasyBook;
+
+public class PracticePg57D {
+	/*a program to print pattern
+	 * A B C D E 
+	 * F G H I J 
+	 * K L M N O 
+	 * P Q R S T 
+	 * U V W X Y */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

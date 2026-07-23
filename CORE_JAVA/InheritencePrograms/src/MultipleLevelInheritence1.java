@@ -1,0 +1,188 @@
+class Student2{
+	private int rollNo;
+	private String studentName;
+	private String branch;
+	public int getRollNo() {
+		return rollNo;
+	}
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public String getBranch() {
+		return branch;
+	}
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+	@Override
+	public String toString() {
+		return "Student1 [rollNo=" + rollNo + ", studentName=" + studentName + 
+				", branch=" + branch + "]";
+	}
+	
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+class Fee2 extends Student2{
+	private String feeType;
+	private double amount;
+	public String getFeeType() {
+		return feeType;
+	}
+	public void setFeeType(String feeType) {
+		this.feeType = feeType;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	@Override
+	public String toString() {
+		return "Fee [feeType=" + feeType + ", amount=" + amount + ", toString()=" 
+				+ super.toString() + "]";
+	}
+	
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Marks1 extends Student2{
+	
+//	private int subject1;
+	protected int subject1;
+//	private int subject2;
+	protected int subject2;
+
+	public int getSubject1() {
+		return subject1;
+	}
+	public void setSubject1(int subject1) {
+		this.subject1 = subject1;
+	}
+	public int getSubject2() {
+		return subject2;
+	}
+	public void setSubject2(int subject2) {
+		this.subject2 = subject2;
+	}
+	@Override
+	public String toString() {
+		return "Marks1 [subject1=" + subject1 + ", subject2=" + subject2 +
+				", \ntoString()=" + super.toString() + "]";
+	}	
+	
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+class Results extends Marks1{
+	
+	private int total;
+	private double average;
+	
+	public void calculateTotal() {
+		total = subject1 +subject2;
+	}
+	
+	public void calculateAverage() {
+		average = total/2.0;
+	}
+
+	@Override
+	public String toString() {
+		return "Results [total=" + total + ", average=" + average +
+				", \ntoString()=" + super.toString() + "]";
+	}
+		
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+public class MultipleLevelInheritence1 {
+
+	public static void main(String[] args) {
+		
+		//creating object fob of class Fee
+		Fee2 fob = new Fee2();
+		
+		
+		fob.setRollNo(1);
+		fob.setStudentName("Raj");
+		fob.setBranch("ECE");
+		fob.setFeeType("College Fee");
+		fob.setAmount(50000.00);
+		
+		System.out.println("Fee class is a sub class of student class \n"
+				+ "it inherited setter getter and tostring methods for its super class student\n");
+		System.out.print("|Roll no: " + fob.getRollNo());
+		System.out.println("     |Student name: " + fob.getStudentName());
+		System.out.print("|Branch: " + fob.getBranch());
+		System.out.println("    |Fee type: " + fob.getFeeType());
+		System.out.print("|Amount to be paid: " + fob.getAmount());
+		
+		System.out.println();
+		System.out.println();
+		System.out.println(fob);
+
+		System.out.println();
+		System.out.println();
+		
+		//creating object mob of class marks
+		Marks1 mob = new Marks1();
+		
+		mob.setRollNo(1);
+		mob.setStudentName("Raj");
+		mob.setBranch("ECE");
+		mob.setSubject1(55);
+		mob.setSubject2(79);
+		
+		System.out.println("Marks class is a sub class of student class \n"
+				+ "it inherited setter getter and tostring methods for its super class student");
+		System.out.print("|Roll no: " + mob.getRollNo());
+		System.out.println("     |Student name: " + mob.getStudentName());
+		System.out.println("|Branch: " + mob.getBranch());
+		System.out.println("|Marks in subject1: " + mob.getSubject1());
+		System.out.println("|Marks in subject2: " + mob.getSubject2());
+		
+		System.out.println();
+		System.out.println();
+		System.out.println(mob);
+		
+		System.out.println();
+		System.out.println();
+		
+		//creating object rob for class Results
+		Results rob = new Results();
+		
+		rob.setSubject1(55);
+		rob.setSubject2(79);
+		
+		System.out.println("Results class is a sub class of Marks class"
+				+ "\n it inherited setter getter and tostring methods from\n its "
+				+ "super class which is marks class which is a sub class of student ");
+		System.out.println("|Marks in subject1: " + rob.getSubject1());
+		System.out.println("|Marks in subject2: " + rob.getSubject2());
+		
+		rob.calculateTotal();
+		rob.calculateAverage();
+		
+		System.out.println();
+		System.out.println();
+		System.out.println(rob);
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package JavaEasyBook;
+
+public class PracticePg54G {
+	/*print a pattern 
+	 * 12345
+	 * 12345
+	 * 12345
+	 * 12345*/
+	public static void main(String[] args) {
+		int i, j;
+		
+		for(i = 1; i <= 4; i++) {
+			for(j = 1; j <= 5; j++) {
+				System.out.println(j + " ");
+			}
+		}
+
+	}
+
+}

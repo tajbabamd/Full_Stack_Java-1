@@ -1,0 +1,34 @@
+class Circle{
+	
+	//state
+	private double radius, area;
+	
+	//setter methods
+	
+	public void setRadius(double radius1) {
+		radius = radius1;
+	}
+	
+	//getter methods
+	
+	public double getRadius() {
+		return radius;
+	}
+	public double getArea() {
+		return area;
+	}
+	
+	//calculation methods
+	
+	public void calculateArea() {
+		area = 3.14 * radius * radius;
+	}
+}
+public class Class3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

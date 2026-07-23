@@ -1,0 +1,119 @@
+package Completed;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import java.util.Scanner;
+
+class PasswordCalculator {
+		
+	Scanner sc = new Scanner(System.in);
+	private String name;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String Pass(String title) {
+		this.name = title;
+		
+		char [] a = name.toCharArray();		
+		int [] e = new int[a.length];
+		char [] f = new char[e.length];
+		
+		for(int i = 0; i < a.length; i++) {		
+			int c = (int) a[i];
+			int d;
+			if(c%2 == 1) {
+				d = c + 2;
+			}else {
+				d = c - 5;
+			}
+			e[i] = d;
+			f[i] =(char) e[i];
+		}
+		
+		String str = new String(f);
+		return str;	
+
+	}
+		
+}
+
+class PasswordConverter  extends JFrame implements ActionListener{
+	private static final long serialVersionUID = 1L;
+	JLabel l1, l2, l3;
+	JButton b1, b2;
+	JTextField t1, t2;
+	JTable ta;
+	JScrollPane sp;
+
+	PasswordCalculator tp = new PasswordCalculator();
+
+	public PasswordConverter (String title) {
+		super(title);
+		setLayout(null);
+		
+		l1 = new JLabel("Convertion of pass");
+		l1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		l1.setForeground(Color.RED);
+		l1.setBounds(20, 15, 400, 30);
+		
+		l2 = new JLabel("Enter Pass");
+		l2.setBounds(100, 70, 100, 30);
+		
+		l3 = new JLabel("converted key");
+		l3.setBounds(330, 70, 100, 30);
+		
+		t1 = new JTextField(20);
+		t1.setBounds(163, 71, 150, 30);
+		
+		t2 = new JTextField(20);
+		t2.setBounds(420, 71, 150, 30);
+		
+		b1 = new JButton("Convert");
+		b1.setBounds(310, 150, 100, 30);
+		
+		add(l1);
+		add(l2);
+		add(t1);
+		add(l3);
+		add(t2);
+		add(b1);
+		
+		b1.addActionListener(this);	
+		
+		setSize(800, 800);			
+	}
+	
+@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==b1) {
+			String title = t1.getText();
+			String str= tp.Pass(title);
+			t2.setText(str);
+		}else {
+			JOptionPane.showMessageDialog(null, "please fill all the fields");
+		
+		}
+	
+	}
+
+}
+
+public class PasswordMaker {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PasswordConverter st = new PasswordConverter("Password Maker");
+		st.setSize(800, 800);
+		st.setVisible(true);
+
+
+	}
+
+}
+
+
+

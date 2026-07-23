@@ -1,0 +1,25 @@
+package JavaEasyBook;
+
+import java.util.Scanner;
+
+public class PracticePg37A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String empName;
+		int empId;
+		double salary, hr, da, pf, it, netsal;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter employee Name: ");
+		System.out.println("Enter employee ID: ");
+		System.out.println("Enter employee Salary: ");
+		empName = sc.nextLine();
+		empId = sc.nextInt();
+		salary = sc.nextDouble();
+		
+		sc.close();
+
+	}
+
+}

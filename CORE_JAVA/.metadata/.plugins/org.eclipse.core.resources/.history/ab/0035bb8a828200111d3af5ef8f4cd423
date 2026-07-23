@@ -1,0 +1,59 @@
+class Account{
+	private String customerName;
+	private int accountNum;
+	private double balance;
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public int getAccountNum() {
+		return accountNum;
+	}
+	public void setAccountNum(int accountNum) {
+		this.accountNum = accountNum;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	@Override
+	public String toString() {
+		return "Account [customerName=" + customerName + ", accountNum=" + accountNum + ", balance=" + balance + "]";
+	}
+	
+	public void transferMoney(Account object, double amount) {
+		
+		this.customerName = object.customerName;
+		this.accountNum = object.accountNum;
+		this.balance = object.balance;
+		this.balance+=amount;
+		
+	}
+	
+}
+public class CopyObjects {
+
+	public static void main(String[] args) {
+		
+		Account acc1 = new Account();
+		Account acc2 = new Account();
+		
+		acc1.setCustomerName("Ramesh");
+		acc1.setAccountNum(123456);
+		acc1.setBalance(15500);
+		
+		System.out.println(acc1);
+		System.out.println();
+		
+		acc2.transferMoney(acc1, 500.00);
+		
+		System.out.println("account1 : "+acc1);
+		System.out.println("account2 : "+acc2);
+
+	}
+
+}

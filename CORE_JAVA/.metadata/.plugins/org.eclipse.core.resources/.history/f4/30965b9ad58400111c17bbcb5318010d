@@ -1,0 +1,43 @@
+class Employee1{
+	private String eName;
+	private int empNo;
+	
+	public Employee1() {
+		this.eName = "king";
+		this.empNo = 101;
+	}
+
+	public Employee1(String eName) {
+		this.eName = eName;
+		this.empNo = 102;
+	}
+
+	public Employee1(String eName, int empNo) {
+		this.eName = eName;
+		this.empNo = empNo;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee1 [eName=" + eName + ", empNo=" + empNo + "]";
+	}
+	
+	
+}
+
+public class Constructor3 {
+
+	public static void main(String[] args) {
+		
+		Employee1 e1 = new Employee1();
+		Employee1 e2 = new Employee1("Queen");
+		Employee1 e3 = new Employee1("Joker", 103);
+		
+		System.out.println("e1: " + e1);
+		System.out.println("e2: " + e2);
+		System.out.println("e3: " + e3);
+		
+	}
+
+}
+
