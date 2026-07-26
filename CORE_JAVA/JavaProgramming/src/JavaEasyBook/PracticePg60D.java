@@ -29,5 +29,6 @@ public class PracticePg60D {
 			}
 			i++;
 		}
+		sc.close();
 	}
 }

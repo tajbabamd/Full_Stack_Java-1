@@ -23,5 +23,17 @@
     <fullyQualifiedTypeName name="TestCoding.TestPass"/>
     <fullyQualifiedTypeName name="java.awt.AWTPermission"/>
     <fullyQualifiedTypeName name="TestCoding.TestPass2"/>
+    <fullyQualifiedTypeName name="Fee"/>
+    <fullyQualifiedTypeName name="Student"/>
+    <fullyQualifiedTypeName name="Results"/>
+    <fullyQualifiedTypeName name="Marks"/>
+    <fullyQualifiedTypeName name="AbstractClasses.TriangelDesign"/>
+    <fullyQualifiedTypeName name="AbstractClasses.TriangleImp"/>
+    <fullyQualifiedTypeName name="CircleDesigb"/>
+    <fullyQualifiedTypeName name="TriangleDesign"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="CircleDesign"/>
+    <fullyQualifiedTypeName name="Geometry"/>
+    <fullyQualifiedTypeName name="A.B"/>
+    <fullyQualifiedTypeName name="Math2"/>
 </qualifiedTypeNameHistroy>
