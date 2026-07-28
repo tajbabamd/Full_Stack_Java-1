@@ -31,9 +31,14 @@
     <fullyQualifiedTypeName name="AbstractClasses.TriangleImp"/>
     <fullyQualifiedTypeName name="CircleDesigb"/>
     <fullyQualifiedTypeName name="TriangleDesign"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="CircleDesign"/>
     <fullyQualifiedTypeName name="Geometry"/>
     <fullyQualifiedTypeName name="A.B"/>
     <fullyQualifiedTypeName name="Math2"/>
+    <fullyQualifiedTypeName name="PayRoll"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 </qualifiedTypeNameHistroy>

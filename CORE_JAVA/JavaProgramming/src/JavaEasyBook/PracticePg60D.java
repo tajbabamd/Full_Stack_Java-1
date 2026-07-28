@@ -7,28 +7,27 @@ public class PracticePg60D {
 
 	public static void main(String[] args) {
 		int n;
-		boolean isPrime = false;
+		boolean isPrime = true;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter a number");
 		n = sc.nextInt();
-		int i = 0;
-		while(n > 1 && i == 0) {
-			
-			for(int j = 2; j <= n/2; j++) {
-				
-				if(n%j == 0) {
-					isPrime = true;
-					break;
+		
+			int i = 2;
+			while(i <= n/2 && n > 1) {
+				if(n%i == 0) {
+					isPrime = false;
+					i++;
 				}
+				i++;
 			}
+			
 			if(isPrime) {
-				System.out.println(n +" is not a prime number");
-			}else {
 				System.out.println(n +" is a prime number");
+			}else {
+				System.out.println(n +" is not a prime number");
 			}
-			i++;
-		}
+			
 		sc.close();
 	}
 }

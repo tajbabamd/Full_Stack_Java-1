@@ -1,7 +1,7 @@
-class Student1{
+class Students{
 	private int rollNo;
 	private String name;
-	public Student1(int rollNo, String name) {
+	public Students(int rollNo, String name) {
 		this.rollNo = rollNo;
 		this.name = name;
 	}
@@ -12,7 +12,7 @@ class Student1{
 	
 }
 
-class Marks2 extends Student1{
+class Marks2 extends Students{
 	private int sub1;
 	private int sub2;
 	
@@ -36,9 +36,9 @@ public class InhConstructor3 {
 
 	public static void main(String[] args) {
 		
-		Marks2 mob = new Marks2(1, "raj", 50, 40);
+		Students sob = new Marks2(1, "raj", 50, 40);
 		
-		System.out.println(mob);
+		System.out.println(sob);
 
 	}
 

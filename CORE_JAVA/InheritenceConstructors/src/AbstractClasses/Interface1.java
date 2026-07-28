@@ -1,7 +1,5 @@
 package AbstractClasses;
 
-
-
 interface TriangelDesign1{
 	
 	abstract public void setBase(double base);
