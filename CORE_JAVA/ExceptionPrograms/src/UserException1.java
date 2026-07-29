@@ -39,7 +39,7 @@ public class UserException1 {
 		
 		Bank b = new Bank();
 		
-		b.createAccount("raj", 10020, 2040.00);
+		b.createAccount("raj", 10020, 240.00);
 		
 		System.out.println(b);
 

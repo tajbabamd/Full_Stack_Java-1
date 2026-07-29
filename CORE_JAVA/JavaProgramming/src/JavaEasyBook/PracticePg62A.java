@@ -6,8 +6,10 @@ public class PracticePg62A {
 		int i;
 		for(i = 1; i <= 10; i++) {
 			if(i == 5) {
-				System.out.println("*".repeat(3) + " Continue -is being applied to the loop " + "*".repeat(3));
+				System.out.println("*".repeat(3) + " Continue -is being applied to the loop"
+						+ "\n continues after "+ i + " " + "*".repeat(3));
 				continue;
+				
 			}
 			if(i == 9) {
 				System.out.println("*".repeat(3) + " Break ----is being applied to the loop " + "*".repeat(3));

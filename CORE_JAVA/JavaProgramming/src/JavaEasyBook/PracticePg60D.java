@@ -14,7 +14,7 @@ public class PracticePg60D {
 		n = sc.nextInt();
 		
 			int i = 2;
-			while(i <= n/2 && n > 1) {
+			while(i <= n/2) {
 				if(n%i == 0) {
 					isPrime = false;
 					i++;
@@ -22,7 +22,7 @@ public class PracticePg60D {
 				i++;
 			}
 			
-			if(isPrime) {
+			if(isPrime && n > 1) {
 				System.out.println(n +" is a prime number");
 			}else {
 				System.out.println(n +" is not a prime number");
